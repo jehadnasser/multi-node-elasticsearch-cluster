@@ -1,0 +1,9 @@
+# to tell ansible to consider this file use:
+# ansible-playbook playbook.yml -i inventory/hosts
+
+[elasticsearch_masters]
+master-1.local
+
+[elasticsearch_nodes]
+data-1.local
+data-2.local

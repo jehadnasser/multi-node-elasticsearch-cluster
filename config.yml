@@ -1,0 +1,18 @@
+---
+configs:
+  master_1:
+    memory: "6144"
+    cpus: "4"
+    ip: "192.168.56.111"
+    domain: master-1.local
+  data_1:
+    memory: "2048"
+    cpus: "2"
+    ip: "192.168.56.112"
+    domain: data-1.local
+  data_2:
+    memory: "2048"
+    cpus: "2"
+    ip: "192.168.56.113"
+    domain: data-2.local
+...

@@ -1,0 +1,7 @@
+---
+
+- name: Include masters node playbook
+  import_playbook: master-playbook.yml
+
+- name: Include clients node playbook
+  import_playbook: node-playbook.yml

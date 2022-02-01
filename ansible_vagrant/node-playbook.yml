@@ -1,0 +1,29 @@
+---
+- hosts: [data-1.local, data-2.local]
+  become: true
+  become_method: sudo
+
+  vars:
+    required_packages:
+    - git
+    - tcptraceroute
+    - nmap
+    - net-tools
+    - htop
+    - jq
+    - python3-pip
+    required_python_packages: []
+    
+  pre_tasks:
+  - name: check for file custom_vars.yml
+    stat:
+      path: custom_vars.yml
+    register: stat_custom_vars
+  - name: load custom vars, if existent
+    include_vars:
+      file: custom_vars.yml
+    when: stat_custom_vars.stat.exists
+
+  roles:
+  - base
+  - elasticsearch

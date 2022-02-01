@@ -1,0 +1,13 @@
+---
+
+elasticsearch_cluster_name: "playground"
+elasticsearch_node_name: "master_1"
+elasticsearch_network_host: "[_local_, _site_]"
+elasticsearch_discovery_seed_hosts: "[\"192.168.56.111\"]"
+elasticsearch_cluster_initial_master_nodes: "[\"master_1\"]"
+elasticsearch_node_master: true
+elasticsearch_node_data: false
+elasticsearch_node_ingest: true
+elasticsearch_node_ml: false
+elasticsearch_init_heap_size: 768m
+elasticsearch_max_heap_size: 768m

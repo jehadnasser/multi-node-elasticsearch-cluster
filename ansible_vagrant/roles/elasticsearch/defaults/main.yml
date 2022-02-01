@@ -1,0 +1,6 @@
+---
+
+elasticsearch_init_heap_size: 1g
+elasticsearch_max_heap_size: 1g
+# check latest version here: https://www.elastic.co/downloads/past-releases#elasticsearch
+elasticsearch_release: 7.16.2
